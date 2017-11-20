@@ -1,0 +1,17 @@
+{
+  "name": "self-destructing-sw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sw.js",
+  "scripts": {
+    "test": "mocha tests/**/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cpr": "^3.0.1",
+    "express": "^4.16.2",
+    "puppeteer": "^0.13.0"
+  }
+}
