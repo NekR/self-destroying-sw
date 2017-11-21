@@ -34,7 +34,7 @@ self.addEventListener('activate', function(e) {
 
 4. Deploy your project! 🎉
 
-[With webpack](packages/gatsby-plugin-remove-serviceworker) | [With Gatsby](packages/webpack-remove-serviceworker-plugin)
+[With webpack](packages/webpack-remove-serviceworker-plugin) | [With Gatsby](packages/gatsby-plugin-remove-serviceworker)
 
 
 ## License
