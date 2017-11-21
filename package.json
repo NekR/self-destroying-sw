@@ -1,14 +1,14 @@
 {
   "name": "self-destructing-sw",
   "version": "1.0.0",
-  "description": "",
+  "description": "Code-snippets and guides on removing ServiceWorker from a websiste.",
   "main": "sw.js",
   "scripts": {
     "test": "mocha tests/**/test.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "cpr": "^3.0.1",
     "express": "^4.16.2",
