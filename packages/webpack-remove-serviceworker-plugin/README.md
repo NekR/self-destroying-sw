@@ -1,11 +1,11 @@
-# `webpack-remove-servicewokrer-plugin`
+# `webpack-remove-serviceworker-plugin`
 
 Helps with ServiceWorker removal from your website. [For more details](https://medium.com/@nekrtemplar/self-destroying-serviceworker-73d62921d717)
 
 ## Usage
 
 ```
-npm install webpack-remove-servicewokrer-plugin
+npm install webpack-remove-serviceworker-plugin
 ```
 
 Then add it to the list of plugins in `webpack.config.js`:
