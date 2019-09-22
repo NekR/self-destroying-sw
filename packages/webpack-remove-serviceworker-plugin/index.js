@@ -8,17 +8,20 @@ function RemoveServiceWorkerPlugin(options) {
 RemoveServiceWorkerPlugin.prototype.apply = function(compiler) {
   var filename = this.filename;
 
-  compiler.plugin('emit', function(compilation, callback) {
-    fs.readFile(path.join(__dirname, 'sw.js'), function(err, content) {
-      if (err) {
-        callback(err);
-        return;
-      }
-
-      compilation.assets[filename] = getSource(content);
-      callback();
-    });
-  });
+  compiler.hooks.emit.tapAsync(
+    'RemoveServiceWorkerPlugin',
+    (compilation, callback) => {
+      fs.readFile(path.join(__dirname, 'sw.js'), function(err, content) {
+        if (err) {
+          callback(err);
+          return;
+        }
+  
+        compilation.assets[filename] = getSource(content);
+        callback();
+      });
+    }
+  );
 };
 
 module.exports = RemoveServiceWorkerPlugin;
