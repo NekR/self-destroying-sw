@@ -3,8 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/NekR/self-destroying-sw/issues"
+  },
+  "homepage": "https://github.com/NekR/self-destroying-sw/tree/master/packages/gatsby-plugin-remove-serviceworker#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NekR/self-destroying-sw",
+    "directory": "packages/gatsby-plugin-remove-serviceworker"
   },
   "keywords": [],
   "author": "",
