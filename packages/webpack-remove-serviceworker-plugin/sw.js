@@ -8,6 +8,10 @@ self.addEventListener('activate', function(e) {
       return self.clients.matchAll();
     })
     .then(function(clients) {
-      clients.forEach(client => client.navigate(client.url))
+      clients.forEach(client => {
+        if (client instanceof WindowClient) {
+          client.navigate(client.url);
+        }
+      })
     });
 });
